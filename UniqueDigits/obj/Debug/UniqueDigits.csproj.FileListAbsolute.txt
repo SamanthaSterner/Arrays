@@ -1,0 +1,6 @@
+C:\Users\eahscs\Documents\GitHub\Arrays\UniqueDigits\bin\Debug\UniqueDigits.exe.config
+C:\Users\eahscs\Documents\GitHub\Arrays\UniqueDigits\bin\Debug\UniqueDigits.exe
+C:\Users\eahscs\Documents\GitHub\Arrays\UniqueDigits\bin\Debug\UniqueDigits.pdb
+C:\Users\eahscs\Documents\GitHub\Arrays\UniqueDigits\obj\Debug\UniqueDigits.csprojResolveAssemblyReference.cache
+C:\Users\eahscs\Documents\GitHub\Arrays\UniqueDigits\obj\Debug\UniqueDigits.exe
+C:\Users\eahscs\Documents\GitHub\Arrays\UniqueDigits\obj\Debug\UniqueDigits.pdb
