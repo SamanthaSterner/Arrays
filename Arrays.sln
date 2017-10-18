@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays", "Arrays\Arrays.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniqueDigits", "UniqueDigits\UniqueDigits.csproj", "{08C0EE31-7B2B-4B5A-9582-5A82BC7B7E74}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Max2", "Max2\Max2.csproj", "{D92F60FE-89AA-41EE-BBE0-08AEF670E5B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{08C0EE31-7B2B-4B5A-9582-5A82BC7B7E74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08C0EE31-7B2B-4B5A-9582-5A82BC7B7E74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08C0EE31-7B2B-4B5A-9582-5A82BC7B7E74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D92F60FE-89AA-41EE-BBE0-08AEF670E5B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D92F60FE-89AA-41EE-BBE0-08AEF670E5B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D92F60FE-89AA-41EE-BBE0-08AEF670E5B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D92F60FE-89AA-41EE-BBE0-08AEF670E5B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

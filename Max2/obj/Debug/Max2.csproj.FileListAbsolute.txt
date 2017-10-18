@@ -1,0 +1,6 @@
+C:\Users\eahscs\Documents\GitHub\Arrays\Max2\bin\Debug\Max2.exe.config
+C:\Users\eahscs\Documents\GitHub\Arrays\Max2\bin\Debug\Max2.exe
+C:\Users\eahscs\Documents\GitHub\Arrays\Max2\bin\Debug\Max2.pdb
+C:\Users\eahscs\Documents\GitHub\Arrays\Max2\obj\Debug\Max2.exe
+C:\Users\eahscs\Documents\GitHub\Arrays\Max2\obj\Debug\Max2.pdb
+C:\Users\eahscs\Documents\GitHub\Arrays\Max2\obj\Debug\Max2.csprojResolveAssemblyReference.cache
