@@ -10,19 +10,38 @@ namespace TicTacToe
     {
         static void Main(string[] args)
         {
+            string[] letter = new string[3];
+            letter[0] = "1";
+            letter[1] = "2";
+            letter[2] = "3";
             string[,] board = new string[3, 3];
-            for (int a = 0; a < board.Length; a ++)
+            Console.Write("  A  B  C \n");
+            for (int a = 0; a < board.GetLength(0); a ++)
             {
-                for (int b = 0; b < board.Length; b++)
+                for (int b = 0; b < board.GetLength(1) ; b++)
                 {
-                    board[a , b] = "+---\n\n|";
+                    if (b == 0)
+                    {
+                        board[a, b] = letter[a] + " _ ";
+                    }
+                    else
+                    {
+                        board[a, b] = " _ ";
+                    }
+                   
+
                 }
             }
-            for (int c = 0; c < board.Length; c++)
+            for (int c = 0; c < board.GetLength(0); c++)
             {
-                for(int d = 0; d < board.Length; d++)
+                for(int d = 0; d < board.GetLength(1); d++)
                 {
                     Console.Write(board[c, d]);
+                    if (d == 2)
+                    {
+                        Console.Write("\n");
+                    }
+
                 }
             }
         }
