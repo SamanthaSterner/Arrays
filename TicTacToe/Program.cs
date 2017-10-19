@@ -10,19 +10,23 @@ namespace TicTacToe
     {
         static void Main(string[] args)
         {
-            string[] letter = new string[3];
-            letter[0] = "1";
-            letter[1] = "2";
-            letter[2] = "3";
-            string[,] board = new string[3, 3];
-            Console.Write("  A  B  C \n");
-            for (int a = 0; a < board.GetLength(0); a ++)
+            string[,] board = new string[4, 4];
+            //sets the outsided to the coordinates
+            board[0, 0] = "   A ";
+            board[0, 1] = " B ";
+            board[0, 2] = " C ";
+            board[1, 0] = "1 ";
+            board[2, 0] = "2 ";
+            board[3, 0] = "3 ";
+
+            //Assign the board to the array
+            for (int a = 1; a < board.GetLength(0); a ++)
             {
-                for (int b = 0; b < board.GetLength(1) ; b++)
+                for (int b = 1; b < board.GetLength(1) ; b++)
                 {
                     if (b == 0)
                     {
-                        board[a, b] = letter[a] + " _ ";
+                        board[a, b] = " _ ";
                     }
                     else
                     {
@@ -36,12 +40,12 @@ namespace TicTacToe
             {
                 for(int d = 0; d < board.GetLength(1); d++)
                 {
-                    Console.Write(board[c, d]);
-                    if (d == 2)
-                    {
-                        Console.Write("\n");
-                    }
 
+                        Console.Write(board[c, d]);
+                        if (d == 3)
+                        {
+                            Console.Write("\n");
+                        }
                 }
             }
         }
