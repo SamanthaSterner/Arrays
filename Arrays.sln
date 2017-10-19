@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniqueDigits", "UniqueDigit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Max2", "Max2\Max2.csproj", "{D92F60FE-89AA-41EE-BBE0-08AEF670E5B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinMax", "MinMax\MinMax.csproj", "{4264B762-1889-4798-B84B-CA40393C32BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D92F60FE-89AA-41EE-BBE0-08AEF670E5B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D92F60FE-89AA-41EE-BBE0-08AEF670E5B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D92F60FE-89AA-41EE-BBE0-08AEF670E5B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4264B762-1889-4798-B84B-CA40393C32BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4264B762-1889-4798-B84B-CA40393C32BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4264B762-1889-4798-B84B-CA40393C32BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4264B762-1889-4798-B84B-CA40393C32BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
