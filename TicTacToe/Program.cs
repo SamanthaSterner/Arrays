@@ -12,9 +12,9 @@ namespace TicTacToe
         {
             string[,] board = new string[4, 4];
             //sets the outsided to the coordinates
-            board[0, 0] = "   A ";
-            board[0, 1] = " B ";
-            board[0, 2] = " C ";
+            board[0, 1] = "   A ";
+            board[0, 2] = " B ";
+            board[0, 3] = " C ";
             board[1, 0] = "1 ";
             board[2, 0] = "2 ";
             board[3, 0] = "3 ";
@@ -36,16 +36,33 @@ namespace TicTacToe
 
                 }
             }
-            for (int c = 0; c < board.GetLength(0); c++)
+
+            // we printin things
+            for (int e = 0; e < board.GetLength(0); e++)
             {
-                for(int d = 0; d < board.GetLength(1); d++)
+                if (e % 2 == 0)
+                {
+                    Console.Write(" Player X, where do you want to move: ");
+                    String play = Console.ReadLine();
+                }
+                else
+                {
+                    Console.Write("Player O, where do you want to move: ");
+                    String play = Console.ReadLine();
+                }
+
+
+                for (int c = 0; c < board.GetLength(0); c++)
                 {
 
+                    for (int d = 0; d < board.GetLength(1); d++)
+                    {
                         Console.Write(board[c, d]);
                         if (d == 3)
                         {
                             Console.Write("\n");
                         }
+                    }
                 }
             }
         }

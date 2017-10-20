@@ -3,3 +3,4 @@ C:\Users\eahscs\Documents\GitHub\Arrays\Dedupe\bin\Debug\Dedupe.exe
 C:\Users\eahscs\Documents\GitHub\Arrays\Dedupe\bin\Debug\Dedupe.pdb
 C:\Users\eahscs\Documents\GitHub\Arrays\Dedupe\obj\Debug\Dedupe.exe
 C:\Users\eahscs\Documents\GitHub\Arrays\Dedupe\obj\Debug\Dedupe.pdb
+C:\Users\eahscs\Documents\GitHub\Arrays\Dedupe\obj\Debug\Dedupe.csprojResolveAssemblyReference.cache
