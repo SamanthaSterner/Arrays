@@ -38,17 +38,35 @@ namespace TicTacToe
             }
 
             // we printin things
+
+            // Input in Number Letter form. EX 1A
+            // A colum (X,1)
+            // B collum (X,2)
+            //C Collum (X,3)
+            // 1 row (1,X)
+            // 2 row (2,X)
+            //3 row (3,X)
             for (int e = 0; e < board.GetLength(0); e++)
             {
                 if (e % 2 == 0)
                 {
                     Console.Write(" Player X, where do you want to move: ");
                     String play = Console.ReadLine();
+                    int firstnum = Convert.ToInt32(play[0].ToString());
+                    int secnum = play[1] - 'A' + 1;
+                   board[firstnum, secnum] = " X ";
+                    if (board [1,1] == board [1,2] && board [1,2] == board[1,3])
+                    {
+                        Console.Write("Player X wins!");
+                    }
                 }
                 else
                 {
                     Console.Write("Player O, where do you want to move: ");
                     String play = Console.ReadLine();
+                    int firstnum = Convert.ToInt32(play[0].ToString());
+                    int secnum = play[1] - 'A' + 1;
+                    board[firstnum, secnum] = " O ";
                 }
 
 
