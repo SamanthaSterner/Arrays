@@ -8,6 +8,27 @@ namespace TicTacToe
 {
     class Program
     {
+        static bool isMatchColumn (string[,] board, string player, int column)
+        {
+            return board[0, column] == player && (board[0, column] == board[1, column] && board[1, column] == board[2, column]);
+        }
+
+        static void printBoard (string[,] board)
+        {
+            for (int c = 0; c < board.GetLength(0); c++)
+            {
+
+                for (int d = 0; d < board.GetLength(1); d++)
+                {
+                    Console.Write(board[c, d]);
+                    if (d == 3)
+                    {
+                        Console.Write("\n");
+                    }
+                }
+            }
+        }
+
         static void Main(string[] args)
         {
             string[,] board = new string[4, 4];
@@ -62,43 +83,51 @@ namespace TicTacToe
                     
                    if (board[1,1] != " _ " && board[1, 1] == board[1, 2] && board[1, 2] == board[1, 3])
                    {
-                        Console.Write("Player X wins!");
+                        Console.Write("Player X wins! \n");
                          e = 10;
-                   }
+                        printBoard(board);
+                    }
                    if (board[2, 1] != " _ " && board[2, 1] == board[2, 2] && board[2, 2] == board[2, 3])
                    {
-                        Console.Write("Player X wins!");
+                        Console.Write("Player X wins!\n");
                         e = 10;
-                   }
+                        printBoard(board);
+                    }
                    if (board[3, 1] != " _ " && board[3, 1] == board[3, 2] && board[3, 2] == board[3, 3])
                    {
-                         Console.Write("Player X wins!");
+                         Console.Write("Player X wins!\n");
                          e = 10;
-                   }
+                        printBoard(board);
+                    }
                    if (board[1, 1] != " _ " && board[1,1] == board[2,1] && board[2,1] == board[3,1])
                     {
-                        Console.Write("Player X wins!");
+                        Console.Write("Player X wins!\n");
                         e = 10;
+                        printBoard(board);
                     }
                     if (board[1, 2] != " _ " && board[1, 2] == board[2, 2] && board[2, 2] == board[3, 2])
                     {
-                        Console.Write("Player X wins!");
+                        Console.Write("Player X wins!\n");
                         e = 10;
+                        printBoard(board);
                     }
                     if (board[1, 3] != " _ " && board[1, 3] == board[2, 3] && board[2, 3] == board[3, 3])
                     {
-                        Console.Write("Player X wins!");
+                        Console.Write("Player X wins!\n");
                         e = 10;
+                        printBoard(board);
                     }
                     if (board[1,1] != " _ " && board[1,1] == board[2,2] && board[2,2] == board[3,3])
                     {
-                        Console.Write("Player X wins!");
+                        Console.Write("Player X wins!\n");
                         e = 10;
+                        printBoard(board);
                     }
                     if (board[1, 3] != " _ " && board[1,3] == board[2, 2] && board[2, 2] == board[3, 1])
                     {
-                        Console.Write("Player X wins!");
+                        Console.Write("Player X wins!\n");
                         e = 10;
+                        printBoard(board);
                     }
                 }
                 else
@@ -114,59 +143,56 @@ namespace TicTacToe
                     board[firstnum, secnum] = " O ";
                     if (board[1, 1] != " _ " && board[1, 1] == board[1, 2] && board[1, 2] == board[1, 3])
                     {
-                        Console.Write("Player O wins!");
+                        Console.Write("Player O wins!\n");
                         e = 10;
+                        printBoard(board);
                     }
                     if (board[2, 1] != " _ " && board[2, 1] == board[2, 2] && board[2, 2] == board[2, 3])
                     {
-                        Console.Write("Player O wins!");
+                        Console.Write("Player O wins!\n");
                         e = 10;
+                        printBoard(board);
                     }
                     if (board[3, 1] != " _ " && board[3, 1] == board[3, 2] && board[3, 2] == board[3, 3])
                     {
-                        Console.Write("Player O wins!");
+                        Console.Write("Player O wins!\n");
                         e = 10;
+                        printBoard(board);
                     }
                     if (board[1, 1] != " _ " && board[1, 1] == board[2, 1] && board[2, 1] == board[3, 1])
                     {
-                        Console.Write("Player O wins!");
+                        Console.Write("Player O wins!\n");
                         e = 10;
+                        printBoard(board);
                     }
                     if (board[1, 2] != " _ " && board[1, 2] == board[2, 2] && board[2, 2] == board[3, 2])
                     {
-                        Console.Write("Player O wins!");
+                        Console.Write("Player O wins!\n");
                         e = 10;
+                        printBoard(board);
                     }
                     if (board[1, 3] != " _ " && board[1, 3] == board[2, 3] && board[2, 3] == board[3, 3])
                     {
-                        Console.Write("Player O wins!");
+                        Console.Write("Player O wins!\n");
                         e = 10;
+                        printBoard(board);
                     }
                     if (board[1, 1] != " _ " && board[1, 1] == board[2, 2] && board[2, 2] == board[3, 3])
                     {
-                        Console.Write("Player O wins!");
+                        Console.Write("Player O wins!\n");
                         e = 10;
+                        printBoard(board);
                     }
                     if (board[1, 3] != " _ " && board[1, 3] == board[2, 2] && board[2, 2] == board[3, 1])
                     {
-                        Console.Write("Player O wins!");
+                        Console.Write("Player O wins!\n");
                         e = 10;
+                        printBoard(board);
                     }
                 }
 
 
-                for (int c = 0; c < board.GetLength(0); c++)
-                {
-
-                    for (int d = 0; d < board.GetLength(1); d++)
-                    {
-                        Console.Write(board[c, d]);
-                        if (d == 3)
-                        {
-                            Console.Write("\n");
-                        }
-                    }
-                }
+                printBoard(board);
             }
         }
     }
